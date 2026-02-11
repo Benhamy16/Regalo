@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de San Valentín 💕</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b5b",
+                        "background-dark": "#1a0b0f",
+                        "accent-green": "#10b981"
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .romantic-mesh {
+            background-color: #1a0b0f;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(238, 43, 91, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(238, 43, 91, 0.1) 0px, transparent 50%);
+        }
+        .stage-container {
+            display: none;
+            min-height: 100vh;
+        }
+        .stage-container.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="romantic-mesh text-white overflow-x-hidden">
+
+    <!-- ETAPA 1: Invitación Inicial -->
+    <div id="stage1" class="stage-container active flex-col items-center justify-center p-6 text-center">
+        <div class="max-w-md w-full space-y-8">
+            <div class="text-6xl"></div>
+            <p class="text-primary font-semibold tracking-widest uppercase text-sm">Lindsay Marin Coveñas</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold">
+                <span class="text-primary">Danna,</span><br>
+                ¿quieres estar conmigo este San Valentín?
+            </h1>
+            <p class="text-gray-400 text-lg">Un regalito Virtual jsjsjjsjsjs</p>
+            
+            <div class="flex gap-4 justify-center mt-8">
+                <button class="yes-button bg-accent-green hover:bg-emerald-400 text-white font-bold py-4 px-8 rounded-full flex items-center gap-2 shadow-lg">
+                    <span class="material-icons">check_circle</span>
+                    <span>Sí</span>
+                </button>
+                <button class="no-button bg-primary hover:bg-rose-400 text-white font-bold py-4 px-8 rounded-full flex items-center gap-2 shadow-lg">
+                    <span class="material-icons">close</span>
+                    <span>No</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ETAPA 2: Primera Duda -->
+    <div id="stage2" class="stage-container flex-col items-center justify-center p-6 text-center">
+        <div class="max-w-md w-full space-y-8">
+            <div class="text-6xl">🤔</div>
+            <h1 class="text-4xl font-bold">
+                Danna,<br>
+                <span class="text-primary text-5xl">¿Estás segura?</span>
+            </h1>
+            <p class="text-gray-400 text-lg">Piensalo, porque sino ....</p>
+            
+            <div class="flex flex-col gap-6 mt-8">
+                <button class="yes-button bg-primary hover:bg-primary/90 text-white font-bold py-5 px-8 rounded-full flex items-center justify-center gap-2 shadow-lg">
+                    <span>¡SÍ, QUIERO!</span>
+                    <span class="material-icons">favorite</span>
+                </button>
+                <button class="no-button bg-slate-700 hover:bg-slate-600 text-white font-semibold py-4 px-12 rounded-full flex items-center justify-center gap-2">
+                    <span>No... ¿o sí?</span>
+                    <span class="material-icons">help_outline</span>
+                </button>
+            </div>
+            
+            <div class="flex gap-2 justify-center pt-8">
+                <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+                <div class="w-6 h-2 rounded-full bg-primary"></div>
+                <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ETAPA 3: Gran Persistencia -->
+    <div id="stage3" class="stage-container flex-col items-center justify-center p-6 relative">
+        <div class="text-center mb-8">
+            <p class="text-primary/70 font-medium tracking-widest uppercase text-sm">Para: Danna</p>
+            <h1 class="text-2xl font-bold opacity-40">Maxima Potencia de Persistencia</h1>
+        </div>
+        
+        <div class="flex flex-col items-center gap-8 w-full max-w-md">
+            <div class="w-full bg-primary/10 border-4 border-primary/40 rounded-xl p-12 text-center">
+                <h2 class="text-4xl md:text-5xl font-black uppercase">
+                    ¿ESTÁS <span class="text-primary">SEGURA</span> DE LO QUE HACES?
+                </h2>
+            </div>
+            
+            <div class="flex flex-col items-center gap-4">
+                <button class="yes-button bg-primary text-white font-bold text-xl py-4 px-12 rounded-full shadow-[0_0_40px_-10px_rgba(238,43,91,0.6)] flex items-center gap-2">
+                    ¡Sí! 🤭
+                </button>
+                <p class="text-white/40 text-xs italic">Piénsalo bien, Danna...</p>
+            </div>
+        </div>
+        
+        <div class="flex gap-2 justify-center pt-8">
+            <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+            <div class="w-2 h-2 rounded-full bg-primary/30"></div>
+            <div class="w-6 h-2 rounded-full bg-primary"></div>
+        </div>
+    </div>
+
+    <!-- ETAPA 4: ¡Éxito! -->
+    <div id="stage4" class="stage-container flex-col items-center justify-center p-6 text-center">
+        <div class="max-w-md w-full space-y-8">
+            
+            
+            <h1 class="text-4xl md:text-5xl font-extrabold">
+                ¡Sabía que dirías <span class="text-primary">que sí!</span> 
+            </h1>
+            <p class="text-gray-400 text-lg">Pedire permiso entonces 🫣</p>
+            
+         <div class="w-64 h-64 mx-auto rounded-full border-4 border-primary p-2 bg-black/50 shadow-2xl">
+    <div class="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-pink-500/20 to-red-500/20 flex items-center justify-center">
+        <img 
+            src="https://i.imgur.com/iqUqkj4.jpeg"
+            alt="Danna"
+            class="w-full h-full object-cover rounded-full"
+        >
+    </div>
+</div>
+
+            
+            <div class="flex flex-col gap-4">
+                <button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full flex items-center justify-center gap-2 shadow-lg">
+                    <span>Un Check como Ale</span>
+                    <span class="material-icons"></span>
+                </button>
+            
+            </div>
+            
+            <div class="text-primary font-semibold text-sm">
+                <span class="opacity-30">━━━━</span>
+                Claro que si como Isaias Nehemias el que se mea todos los dias
+                <span class="opacity-30">━━━━</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="valentine.js"></script>
+</body>
+</html>
